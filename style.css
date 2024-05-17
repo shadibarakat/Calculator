@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34; /* Dark background */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+#calculator {
+    background-color: #3b3f45; /* Darker grey calculator background */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    max-width: 400px; /* Increase max width */
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 30px;
+    font-size: 2.5rem; /* Larger font size */
+    text-align: right; /* Align text to the right */
+    border: none;
+    background-color: #2e3238; /* Darker display background */
+    color: #ffffff; /* White text color */
+    border-radius: 15px 15px 0 0; /* Rounded corners only on top */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px; /* Larger padding */
+}
+
+button {
+    width: 100%;
+    padding: 20px; /* Larger button padding */
+    border: none;
+    background-color: #61dafb; /* Light blue buttons */
+    color: #000; /* Black text */
+    font-size: 1.5rem; /* Consistent font size */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px; /* More rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+button:hover {
+    background-color: #21a1f1; /* Darker blue on hover */
+}
+
+.operator-btn {
+    background-color: #ff6f61; /* Light red operators */
+}
+
+.operator-btn:hover {
+    background-color: #e65c50; /* Darker red on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Button press effect */
+}
